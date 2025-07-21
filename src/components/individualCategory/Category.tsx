@@ -52,7 +52,7 @@ const Category = ({ selectedCategory }: Props) => {
       <div className={style.optionContainer}>
 
       {options.map((option) => 
-        <div className={[style.option,style[option.customClass]].join(" ")}>
+        <div className={[style.option,style[option.customClass]].join(" ")} key={option.heading}>
           <div className={style.optionHeader}>
             <div className={[style.iconContainer,style.iconContainerBlue].join(" ")}>
               <img src={option.icon} className={style.icon} />
@@ -67,7 +67,7 @@ const Category = ({ selectedCategory }: Props) => {
 
           <div className={style.optionMain}>
               {option.features.map((feature) => 
-                <div className={style.feature}>
+                <div className={style.feature} key={feature.description}>
                   <img src={feature.icon} className={style.featureIcon} />
                   <p className={style.featureHeading}>{feature.description}</p>
                 </div>
