@@ -4,7 +4,7 @@ import useCategoryDescription from "../../hooks/useCategoryDescription";
 import style from "./Categories.module.css"
 
 interface Props{
-  handleClick : (category : string) => void;
+  handleClick : (id : number) => void;
 }
 const stripColor = [
   "#FF6B6B", // vibrant coral red
@@ -38,7 +38,7 @@ const Categories = ({handleClick} : Props) => {
                   styled={{ backgroundColor: stripColor[index % stripColor.length] }}
                   name={category.name}
                   description={categoryDescription.find((description) => description.id === category.id)?.description || ""}
-                  handleClick={() => handleClick(category.name)}
+                  handleClick={() => handleClick(category.id)}
                   key={category.id}
               ></Card>
           ))}

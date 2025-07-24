@@ -25,5 +25,21 @@ body{
     margin: 0 auto;
     padding: 20px;
     max-width: 950px;
-    background-color: #fdfaf6;
+    /* background-color: #F9FAFB; */
+
+
+    /* Cool, professional */
+/* background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%); */
+
+/* Warm, welcoming */
+/* background: linear-gradient(135deg, #fefbff 0%, #f3f4f6 100%); */
+
+/* Soft blue (trust/learning) */
+background: linear-gradient(135deg, #f0f9ff 0%, #e0e7ff 100%);
+
+background: linear-gradient(135deg, #f0f9ff 0%, #f1f5f9 100%);
+}
+
+button{
+    font-family: var(--Inter);
 }

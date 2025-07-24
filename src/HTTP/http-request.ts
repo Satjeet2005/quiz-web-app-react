@@ -11,6 +11,11 @@ class HttpService{
         const request = apiClient.get<T>(this.endpoint);
         return { request };
     }
+
+    getCategoryQuestionCount<T>(id : number){
+        const request = apiClient.get<T>(this.endpoint + id);
+        return { request };
+    }
 }
 
 function create(endpoint : string){

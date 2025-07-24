@@ -1,0 +1,17 @@
+.hintContainer {
+  display: inline-flex;
+  align-items: center;
+  padding: 4px 12px;
+  border-radius: 9999px;
+  background-color: #fef3c7;
+  color: #92400e;
+  font-size: 14px;
+  font-weight: 500;
+    margin-top: 50px;
+}
+
+.hintIcon {
+  margin-right: 4px;
+  height: 16px;
+  width: 16px;
+}

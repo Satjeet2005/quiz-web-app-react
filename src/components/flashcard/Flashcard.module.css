@@ -1,0 +1,149 @@
+
+.flashcardContainer{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.flashcard{
+    padding: 20px;
+    box-sizing: border-box;
+    width: 90%;
+    height: 400px;
+    background-color: white;
+    border-radius: 20px;
+    display: grid;
+    /* justify-content: center; */
+    grid-template-rows: min-content auto;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;  
+    cursor: pointer;
+            transition-delay: 0.25s;
+
+}
+
+.delay{
+    /* transition-delay: 0.3s; */
+    /* animation: delay 0.8s; */
+    animation-name: delay;
+    animation-delay: 10s;
+}
+
+@keyframes delay{
+    100%{
+        opacity: 0;
+        display: none;
+        background-color: #EF4444;
+    }
+    0%{
+        opacity: 1;
+        display: block;
+    }
+}
+
+.transform{
+    transform: rotateX(180deg);
+}
+
+.headingContainer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.heading{
+    margin: 0;
+    font-size: 12px;
+    color: var(--grey);
+    width: 100%;
+}
+
+.text{
+    font-size: 25px;
+    color: var(--coffee);
+    margin: auto 0;
+    width: 100%;
+}
+
+.question{
+    opacity: 1;
+}
+
+.answer{
+    opacity: 0;
+}
+
+.forward{
+    animation-name: forward;
+    animation-duration: 0.1s;
+    opacity: 1;
+    animation-delay: 0.4s;
+}
+
+@keyframes forward {
+    /* from{
+        opacity: 1;
+        background-color: white;
+    } */
+    to{
+        opacity: 0;
+    }
+    
+}
+
+.backward{
+    animation-name: backward;
+    animation-duration: 0.1s;
+    animation-delay: 0.4s;
+    opacity: 0;
+}
+
+@keyframes backward{
+    /* from{
+        opacity: 0;
+    } */
+    to{
+        opacity: 1;
+    }
+}
+.difficultyIndicator{
+    padding: 5px 11px;
+    display: flex;
+    align-items: center;
+    border-radius: 50px;
+    gap: 4px;
+    transition: all 0.3s ease;
+    cursor: auto;
+}
+
+.difficultyIndicator:hover{
+    transform: translateY(-1px);
+}
+
+.difficultyIndicator.easy{
+    background-color: var(--green);
+}
+
+.difficultyIndicator.medium{
+    background-color: #F59E0B;
+}
+
+.difficultyIndicator.hard{
+    background-color: #EF4444;
+}
+
+.indicatorText{
+    color: white;
+    font-weight: 500;
+    margin: 0;
+    font-size: 14px;
+}
+
+.indicatorIcon{
+    width: 14px;
+    margin-top: 1px;
+}
+
+.innerContent{
+    /* transform: rotate(180deg); */
+}

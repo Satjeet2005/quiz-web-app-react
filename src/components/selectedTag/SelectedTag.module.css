@@ -1,0 +1,20 @@
+.tag{
+    padding: 3px 6px;
+    margin-left: auto;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    font-size: 13px;
+    color: white;
+    font-weight: 500;
+    border-radius: 50px;
+    transition: display 0.6s ease;
+}
+
+.tagGreen{
+    background-color: var(--green);
+}
+
+.tagBlue{
+    background-color: var(--blue);
+}

@@ -1,0 +1,278 @@
+svg{
+  stroke: #6B7280;
+}
+
+.fill{
+  fill : #6B7280;
+}
+.difficultyContainer{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+@media screen and (min-width:768px){
+  .difficultyContainer{
+    min-height: 104px;
+  }
+}
+
+.heading{
+  color: var(--coffee);
+  font-size: 15px;
+  font-weight: 500;
+  margin: 0 0 6px 0;
+}
+
+.dropdownContainer {
+  position: relative;
+  width: 100%;
+}
+
+.dropdownTrigger {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 9px 12px;
+  background: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 14px;
+  color: #374151;
+  transition: all 0.2s ease;
+}
+
+/* .dropdownTrigger.greenBorder{
+  border-color: #0E9F6E;
+}
+
+.dropdownTrigger.yellowBorder{
+  border-color: #FCE96A;
+}
+
+.dropdownTrigger.redBorder{
+  border-color: #F8B4B4;
+}
+
+.dropdownTrigger.purpleBorder{
+  border-color :#AC94FA; 
+} */
+
+.dropdownTrigger:hover {
+  background: #f9fafb;
+  /* border-color: #d1d5db; */
+}
+
+.dropdownTrigger:focus {
+  outline: none;
+  /* border-color: #3b82f6; */
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+}
+
+.triggerContent {
+  display: grid;
+  grid-template-columns: min-content auto;
+  align-items: center;
+  gap: 8px;
+}
+
+.triggerInfo{
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.triggerLabel{
+  font-size: 15px;
+  font-weight: 510;
+}
+
+.triggerDescription{
+    font-size: 12px;
+
+}
+
+.triggerIcon{
+  background-color: #f6f7f8;
+  width: 24px;
+  height: 24px;
+  border-radius: 5px;
+  padding: 2px;
+  box-sizing: border-box;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 0;
+}
+
+
+.triggerIcon svg{
+  width: 100%;
+  height: 100%;
+}
+
+
+.chevron {
+  width: 16px;
+  height: 16px;
+  color: #6C2BD9;
+  transition: transform 0.2s ease;
+}
+
+.chevronOpen {
+  transform: rotate(180deg);
+}
+
+.dropdownMenu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 7px;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+  0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  z-index: 50;
+  margin-top: 4px;
+  overflow: hidden;
+}
+
+.dropdownItem {
+  display: grid;
+  grid-template-columns: min-content auto min-content;
+  align-items: center;
+  gap: 8px;
+  padding: 13px 12px;
+  cursor: pointer;
+  font-size: 14px;
+  color: #95979b;
+  transition: background-color 0.2s ease;
+  border: none;
+  background: none;
+  width: 100%;
+  text-align: left;
+}
+
+.dropdownItem:hover{
+  background-color: #F9FAFB;
+}
+
+
+.itemIcon {
+  background-color: #f6f7f8;
+  width: 24px;
+  height: 24px;
+  border-radius: 5px;
+  padding: 2px;
+  transition: all 0.3s ease;
+  box-sizing: border-box;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 0;
+}
+
+.green svg{
+  stroke: #057A55;
+}
+
+.green{
+  background-color: #DEF7EC ;
+}
+
+.green:hover{
+  background-color: #BCF0DA ;
+}
+
+.yellow svg{
+  stroke: #E3A008;
+}
+
+.yellow {
+  background-color: #fdf8d0 ;
+}
+
+.yellow:hover{
+  background-color: #faf1b3;
+}
+
+.red svg{
+  stroke: #F44336;
+}
+
+.red{
+  background-color: #FDE8E8 ;
+}
+
+.red:hover{
+  background-color: #FBD5D5;
+}
+
+.purple svg{
+  fill: #9061F9;
+}
+
+.purple{
+  background-color : #EDEBFE ;
+}
+
+.purple:hover{
+  background-color: #DCD7FE;
+}
+
+.itemIcon svg{
+  width: 100%;
+  height: 100%;
+}
+
+.itemContent{
+  display: flex;
+  flex-direction: column;
+}
+
+.itemLabel {
+  flex: 1;
+  color: var(--coffee);
+  font-weight: 505;
+  font-size: 15px;
+}
+
+.itemDescription{
+  font-size: 12px;
+}
+
+.selectedIndicator{
+  width: 8px;
+  height: 8px;
+  border-radius: 50px;
+  box-sizing: border-box;
+}
+
+.selectedIndicator.green{
+  background-color: #0E9F6E;
+}
+
+.selectedIndicator.yellow{
+  background-color: #E3A008;
+}
+
+.selectedIndicator.red{
+  background-color: #F05252;
+}
+
+.selectedIndicator.purple{
+  background-color: #9061F9;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 40;
+}
