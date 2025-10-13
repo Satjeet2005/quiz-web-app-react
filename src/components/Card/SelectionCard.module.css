@@ -1,0 +1,45 @@
+.card {
+    width: 100%;
+  margin: 0 auto;
+  box-sizing: border-box;
+  margin-top: 10px;
+}
+
+.headingContainer {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.heading {
+  font-size: 23px;
+  font-weight: 600;
+  color: var(--coffee);
+  margin: 0;
+}
+
+.subheading{
+    font-size: 13px;
+    margin: 4px 0 20px 0;
+    color: var(--grey);
+}
+
+.icon {
+  width: 18px;
+  margin-top: 5px;
+}
+
+.formContainer{
+  display: grid;
+  row-gap: 20px;
+}
+
+@media screen and (min-width:768px){
+  .formContainer{
+    /* grid-template-columns: 1fr 1fr; */
+    /* align-items: center; */
+    /* justify-content: center; */
+    /* column-gap: 20px; */
+    /* row-gap: 0; */
+  }
+}

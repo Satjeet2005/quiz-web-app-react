@@ -1,0 +1,47 @@
+.btn{
+    width: 100%;
+    padding: 12px;
+    border-radius: 10px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    outline: none;
+    border: none;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+@media screen and (min-width:768px){
+    .btn{
+        width: 40%;
+        grid-column: 1 / span 2;
+        margin-left: auto;
+        margin-right: auto;
+
+    }
+}
+
+.btnBlue{
+    background-color: #1C64F2;
+}
+
+.btnGreen{
+    background-color: #0E9F6E;
+}
+
+.btnDisabled{
+    cursor: not-allowed;
+}
+
+.icon{
+    width: 15px;
+}
+
+.btnText{
+    color: white;
+    font-weight: 500;
+    font-size: 16px;
+    margin: 0;
+}
+

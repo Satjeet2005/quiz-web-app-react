@@ -23,5 +23,16 @@
     "noFallthroughCasesInSwitch": true,
     "noUncheckedSideEffectImports": true
   },
-  "include": ["src"]
+  "include": ["src"],
+  "exclude": [
+    "src/components/Homepage.tsx",
+    // Exclude lowercase duplicates that conflict with uppercase counterparts on case-insensitive tooling
+    "src/components/buttons/**",
+    "src/components/cardSelectionIndicator/**",
+    "src/components/formPreState/**",
+    "src/components/individualCategory/**",
+    "src/components/flashcard/**",
+    "src/components/selectedTag/**",
+    "src/components/selection/**"
+  ]
 }

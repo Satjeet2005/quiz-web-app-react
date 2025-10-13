@@ -1,0 +1,82 @@
+.emptyState {
+  text-align: center;
+  padding-top: 48px;
+  padding-bottom: 48px;
+}
+
+.iconContainer {
+  width: 64px;
+  height: 64px;
+  margin: 0 auto 16px auto;
+  background-color: #f1f5f9;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon {
+    margin-top: 9px;
+  height: 45px;
+  width: 45px;
+  color: #94a3b8;
+}
+
+.title {
+  font-size: 18px;
+  font-weight: 500;
+  color: #0f172a;
+  margin-bottom: 8px;
+}
+
+.description {
+  color: #64748b;
+  margin-bottom: 24px;
+}
+
+.buttonContainer {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+}
+
+.btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    outline: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.flashcardButton {
+  border: 1px solid #dcfce7;
+  color: #15803d;
+  background-color: transparent;
+}
+
+.flashcardButton:hover {
+  background-color: #f0fdf4;
+}
+
+.mcqButton {
+  border: 1px solid #dbeafe;
+  color: #1d4ed8;
+  background-color: transparent;
+}
+
+.mcqButton:hover {
+  background-color: #eff6ff;
+}
+
+.buttonIcon {
+  margin-right: 8px;
+  height: 16px;
+  width: 16px;
+}
+
+.buttonText{
+  font-size: 14px;
+  font-weight: 500;
+}

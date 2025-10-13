@@ -1,0 +1,19 @@
+.btn{
+    width: 100%;
+    outline: none;
+    border: 2px solid #E5E7EB;
+    background-color: transparent;
+    padding: 8px 10px;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btnBlue:hover{
+    border: 2px solid #76A9FA;
+}
+
+.btnGreen:hover{
+    border: 2px solid #31C48D;
+}

@@ -5,7 +5,7 @@ interface Category{
         name : string
 }
 
-export interface Categories{
+export interface CategoriesProps{
     trivia_categories : Category[]
 }
 

@@ -1,0 +1,38 @@
+.difficultyIndicator {
+  padding: 5px 11px;
+  display: flex;
+  align-items: center;
+  border-radius: 50px;
+  gap: 4px;
+  transition: all 0.3s ease;
+  text-transform: capitalize;
+  cursor: auto;
+}
+
+.difficultyIndicator:hover {
+  transform: translateY(-1px);
+}
+
+.difficultyIndicator.easy {
+  background-color: var(--green);
+}
+
+.difficultyIndicator.medium {
+  background-color: #f59e0b;
+}
+
+.difficultyIndicator.hard {
+  background-color: #ef4444;
+}
+
+.indicatorText {
+  color: white;
+  font-weight: 500;
+  margin: 0;
+  font-size: 14px;
+}
+
+.indicatorIcon {
+  width: 14px;
+  margin-top: 1px;
+}
