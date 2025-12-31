@@ -165,7 +165,7 @@ const Categories = ({ selectedCategory, handleClick }: Props) => {
   return (
 
     <>
-      <div className="w-full flex flex-col box-border lg:pt-10 ">
+      <div className="w-full flex flex-col box-border lg:pt-10 overflow-x-hidden">
         <div className="border-b-2 pb-6 px-5 pt-2 md:px-10 lg:pr-11 lg:pl-8">
           <p className="text-3xl font-Hando font-medium text-center md:text-left">
             Which Category Will You Choose Today?

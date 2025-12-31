@@ -10,7 +10,7 @@ interface Props{
 const Homepage = ({handleClick}:Props) => {
   return (
     <div
-      className="w-full h-full flex flex-col items-center pb-12"
+      className="w-full min-h-screen flex flex-col items-center pb-20 md:pb-24 lg:pb-32"
       style={{
         backgroundImage:
           "linear-gradient(to top, #d5d4d0 0%, #d5d4d0 1%, #eeeeec 31%, #efeeec 75%, #e9e9e7 100%",

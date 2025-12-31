@@ -80,7 +80,7 @@ const LearningOption = ({
   selectedDifficulty,
 }: Props) => {
   return (
-    <div className="w-full flex flex-col box-border pb-[90px] lg:pt-10">
+    <div className="w-full flex flex-col box-border pb-[90px] lg:pt-10 overflow-x-hidden">
       <div className=" flex flex-col flex-wrap border-b-2 pb-4 px-5 pt-2 md:px-10 lg:pr-11 lg:pl-8">
         <p className="text-3xl font-Hando font-medium text-center md:text-left">
           Choose Your Learning Path
@@ -122,7 +122,7 @@ const LearningOption = ({
         </div>
       </div>
 
-      <div className="max-w-4xl h-full m-5 box-border">
+      <div className="max-w-4xl h-full m-5 box-border overflow-x-hidden">
         {/* <p className="font-Inter leading-none font-medium">Step 1</p> */}
         <p className="font-Inter font-medium">Select Learning Method</p>
         <div className="grid justify-items-center gap-x-[20px] gap-y-[20px] mt-[10px] md:grid-cols-2 lg:items-center">

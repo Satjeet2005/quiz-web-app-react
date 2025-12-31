@@ -48,7 +48,7 @@ const Card = ({
   handleActiveStep,
 }: Props) => {
   return (
-    <div className="w-full h-full relative bg-white box-border mt-4 md:w-[90%] md:h-fit md:shadow-lg  md:mx-auto md:my-auto md:rounded-2xl lg:h-[85%] lg:flex lg:flex-row lg:max-w-[1140px]">
+    <div className="w-full h-full relative bg-white box-border mt-4 md:w-[90%] md:h-fit md:shadow-lg  md:mx-auto md:my-auto md:rounded-2xl lg:h-[85%] lg:flex lg:flex-row lg:max-w-[1140px] overflow-hidden">
       <CardButtons
         isValid={isValid}
         selectedDifficulty={selectedDifficulty}
